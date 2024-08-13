@@ -1,0 +1,227 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background: conic-gradient(from 120deg, #FFFFFF, #767676);
+    background-size:cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: all 1s ease;
+    overflow-x: hidden;
+}
+
+.container {
+    font-family: 'Poppins','sans-serif';
+    width: 40%;
+    padding: 20px;
+    background-color: #c0c0c0;
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.842);
+    transition: all 1s ease;
+    margin-top: 34px;
+    margin-bottom: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 39px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 3px  rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.829);
+}
+
+.text-primary {
+  color: hsl(310, 17%, 93%);
+}
+
+/* Form Styles */
+
+#book-form {
+  margin-top: 20px;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+ margin-left: 160px;
+  width: 30%;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 800;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.7s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  outline: none;
+  color: #000000;
+  font-weight: 800;
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  cursor: pointer;
+  position: relative;
+  border: 1px solid transparent;
+  z-index: 2;
+  border-radius: 10px;
+  transition: all 0.7s ease-in-out; 
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: 110px;
+  margin-top: 37px;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+#book-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#book-list li {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr; /* adjust the column widths as needed */
+  align-items: center;
+  padding: 15px;
+  margin-top: -40px;
+}
+
+#book-list li span {
+  padding: 15px;
+  text-align: center; 
+  width: 100%;
+  margin-left: -50px;
+  text-decoration: none;/* center align text */
+}
+
+#book-list li span:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#book-list li span:first-child {
+  width: 100%;
+  margin-left: -35px; /* make title column wider */
+}
+
+#book-list li span:nth-child(2) {
+  width: 100%;
+  margin-left: 10px; /* make year column wider */
+}
+
+#book-list li span:nth-child(3) {
+  width: 100%;
+  margin-left: 50px; /* make author column wider */
+}
+
+#book-list li span:last-child {
+  width: 100%;
+  margin-left: 20px; 
+}
+
+#book-list li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 24px;
+}
+
+#book-list li a:hover {
+  color: #23527c;
+}
+
+.delete {
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete:hover {
+  color: #337ab7;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .container {
+    margin: 20px;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    margin-left: 110px;
+  }
+
+  ul {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  input[type="submit"] {
+    margin-left: 11s0px;
+  }
+
+  ul {
+    margin-left: 60px;
+    margin-bottom: 30px;
+  }
+}
